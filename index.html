@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaytouna – Innovation in Technology and STEAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="banner-slot" data-include="sections/banner.html"></div>
+
+<nav class="menu" id="menu" aria-label="Page sections">
+  <a class="brand" href="#home"><img src="images/logo.png" alt="Zaytouna"></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  <ul id="links">
+    <li><a href="#pillars">Pillars</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#curriculum">Curriculum</a></li>
+    <li><a href="#contact">Contact us</a></li>
+  </ul>
+</nav>
+
+<main id="app">
+  <div data-include="sections/pillars.html"></div>
+  <div data-include="sections/pyramid.html"></div>
+  <div data-include="sections/curriculum.html"></div>
+  <div data-include="sections/contact.html"></div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
