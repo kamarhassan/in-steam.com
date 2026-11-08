@@ -10,7 +10,10 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="banner-slot" data-include="sections/banner.html"></div>
+<!-- Banner -->
+<section id="home" class="banner">
+  <img src="images/banner.jpg" alt="Innovation in Technology and STEAM – Zaytouna">
+</section>
 
 <nav class="menu" id="menu" aria-label="Page sections">
   <a class="brand" href="#home"><img src="images/logo.png" alt="Zaytouna"></a>
@@ -19,15 +22,251 @@
     <li><a href="#pillars">Pillars</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#curriculum">Curriculum</a></li>
+    <li><a href="#grades">Grades</a></li>
     <li><a href="#contact">Contact us</a></li>
   </ul>
 </nav>
 
+<!-- Slideshow: put your photos in the images/ folder and change the file names below -->
+<section id="slideshow" class="slider" aria-label="Slideshow" aria-roledescription="carousel">
+  <div class="ss-track">
+    <figure class="ss-item"><img src="images/slide1.jpg" alt="Slide 1"><figcaption>Caption for slide 1</figcaption></figure>
+    <figure class="ss-item"><img src="images/slide2.jpg" alt="Slide 2"><figcaption>Caption for slide 2</figcaption></figure>
+    <figure class="ss-item"><img src="images/slide3.jpg" alt="Slide 3"><figcaption>Caption for slide 3</figcaption></figure>
+  </div>
+  <button class="ss-btn ss-prev" aria-label="Previous slide">‹</button>
+  <button class="ss-btn ss-next" aria-label="Next slide">›</button>
+  <div class="ss-dots" role="tablist"></div>
+</section>
+
+
 <main id="app">
-  <div data-include="sections/pillars.html"></div>
-  <div data-include="sections/pyramid.html"></div>
-  <div data-include="sections/curriculum.html"></div>
-  <div data-include="sections/contact.html"></div>
+  <!-- Pillars -->
+<section id="pillars" class="slide pillars">
+  <div class="pillars-text">
+    <h2>Pillars</h2>
+    <p>The Innovation in Technology &amp; STEAM curriculum covers all K12 classes with necessary <b>skills</b> from Digital Literacy to the <b>4<sup>th</sup> Industrial Revolution</b> and <b>Innovation</b>.</p>
+  </div>
+
+  <div class="matrix">
+    <div class="axis axis-v" aria-hidden="true">
+      <span class="tag tag-top">Grade 12</span><i class="line"></i><span class="tag tag-bottom">Grade 1</span>
+    </div>
+    <div class="axis axis-h" aria-hidden="true">
+      <span class="tag tag-left">Digital Literacy</span><i class="line"></i><span class="tag tag-right">Innovation</span>
+    </div>
+
+    <div class="tile t-orange"><span>Microsoft <b>Office</b> &amp; Apps…</span></div>
+    <div class="tile t-gray"><span><b>Robotics</b> 3D Printing…</span></div>
+    <div class="tile t-yellow"><span><b>Hardware</b> Operating Systems…</span></div>
+    <div class="tile t-blue"><span>Web &amp; Coding <b>AI…</b></span></div>
+  </div>
+</section>
+  <!-- Holistic Skill Development (pyramid) -->
+<section id="skills" class="slide pyramid-slide">
+  <h2>Holistic<br>Skill<br>Development</h2>
+
+  <div class="pyramid">
+    <div class="row" style="--i:0;--c:#e873cf">
+      <div class="shape"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg></div>
+      <div class="label"><h3>Entrepreneurial Thinking</h3><p>Ideation, pitching, innovative solutions</p></div>
+    </div>
+    <div class="row" style="--i:1;--c:#f2e04a">
+      <div class="shape"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M10 9l-3 3 3 3M14 9l3 3-3 3M13 8l-2 8"/></svg></div>
+      <div class="label"><h3>Project-Based Learning</h3><p>Design Thinking process, real-world challenges</p></div>
+    </div>
+    <div class="row" style="--i:2;--c:#f0a074">
+      <div class="shape"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><circle cx="5" cy="14" r="2"/><circle cx="19" cy="8" r="2"/><circle cx="19" cy="18" r="2"/><path d="M10 11l-3 2M14 11l3-2M14 13l3 4"/></svg></div>
+      <div class="label"><h3>Interdisciplinary Learning</h3><p>STEAM exploration, holistic thinking</p></div>
+    </div>
+    <div class="row" style="--i:3;--c:#cdeefd">
+      <div class="shape"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM4 7.5l8 4.5 8-4.5M12 12v9"/></svg></div>
+      <div class="label"><h3>3D Design &amp; Printing</h3><p>Tinkercad to Fusion 360 skills</p></div>
+    </div>
+    <div class="row" style="--i:4;--c:#8ea6ee">
+      <div class="shape"><svg viewBox="0 0 24 24"><path d="M3 4h18M5 4v10h14V4M12 14v3M8 21l4-4 4 4"/></svg></div>
+      <div class="label"><h3>Digital Presentation</h3><p>Sway, Forms, Clipchamp for communication</p></div>
+    </div>
+  </div>
+</section>
+  <!-- Curriculum Scope -->
+<section id="curriculum" class="slide curriculum">
+  <h2>Curriculum Scope: K-12 Progressive Learning</h2>
+
+  <div class="cur-layout">
+    <ol class="steps">
+      <li><b>Grades 1-3</b><p>Fundamentals of computers, Scratch, intro to AI, 3D shapes</p></li>
+      <li><b>Grades 4-6</b><p>Arduino, Tinker CAD, Microsoft Office Internet &amp; Networks, Introduction to Machine Learning, 3D printing</p></li>
+      <li><b>Grades 7-9</b><p>Introduction to Python, Microsoft Office, Use of Chatbots, Advanced Arduino, Advanced 3D, Image Generation with AI</p></li>
+      <li><b>Grades 10-12</b><p>Python, HTML 5, Arduino, Computer Repair, Voice/Video AI, Fusion 360, Web Dev, Entrepreneurship</p></li>
+    </ol>
+
+    <ul class="tools" aria-label="Tools used">
+      <li style="--c:#e8402a">Makey Makey</li><li style="--c:#7b5ce6">Scratch</li>
+      <li style="--c:#3d3d3d">3D Printing</li><li style="--c:#e8602a">Tinkercad</li>
+      <li style="--c:#00a3b4">Arduino</li><li style="--c:#2b5eb8">Word</li>
+      <li style="--c:#3776ab">Python</li><li style="--c:#1fa968">AI Chatbots</li>
+      <li style="--c:#4285f4">Google</li><li style="--c:#8e44ad">Fusion 360</li>
+    </ul>
+  </div>
+</section>
+  <!-- Grades: Table of Contents (one block per grade; copy a block to add another grade) -->
+<section id="grades" class="grades">
+  <div class="grades-head">
+    <h2>Table of Contents by Grade</h2>
+    <nav class="grade-chips" aria-label="Jump to grade">
+      <a href="#grade-2">Grade 2</a>
+      <a href="#grade-3">Grade 3</a>
+      <a href="#grade-7">Grade 7</a>
+      <a href="#grade-12">Grade 12</a>
+    </nav>
+  </div>
+
+  <article id="grade-2" class="grade g2">
+    <span class="star s1">✦</span><span class="star s2">✦</span>
+    <h2 class="grade-title">Grade 2</h2>
+    <div class="book">
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>An Overview of Computers</li>
+          <li>Turning On &amp; Shutting Down a Computer</li>
+          <li>Activities Using Mouse and Keyboard</li>
+          <li>Input/Output Devices</li>
+          <li>Computer and Your Health</li>
+        </ul>
+      </div>
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>Editing a Text with Word</li>
+          <li>Coding with Scratch</li>
+          <li>Face Recognition with Scratch</li>
+          <li>On/Off Activity with Makey Makey</li>
+        </ul>
+      </div>
+    </div>
+    <div class="demo-box">
+      <h3>Try a demo</h3>
+      <p class="demo-row"><span>Username</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <p class="demo-row"><span>Password</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <a class="demo-link" href="#" rel="noopener">Click here to see the course</a><!-- change href to this grade's course link -->
+    </div>
+  </article>
+
+  <article id="grade-3" class="grade g3">
+    <span class="star s1">✦</span><span class="star s2">✦</span>
+    <h2 class="grade-title">Grade 3</h2>
+    <div class="book">
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>Computers and Clicks</li>
+          <li>Step by Step AI</li>
+          <li>The 3D Shapes Adventure</li>
+          <li>Being Safe When Using a Computer</li>
+          <li>Editing Documents</li>
+        </ul>
+      </div>
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>Designing Presentations</li>
+          <li>Interactive Projects with Scratch</li>
+          <li>Makey Makey Projects</li>
+          <li>Coding the Tinkerbott</li>
+        </ul>
+      </div>
+    </div>
+    <div class="demo-box">
+      <h3>Try a demo</h3>
+      <p class="demo-row"><span>Username</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <p class="demo-row"><span>Password</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <a class="demo-link" href="#" rel="noopener">Click here to see the course</a><!-- change href to this grade's course link -->
+    </div>
+  </article>
+
+  <article id="grade-7" class="grade g7">
+    <span class="star s1">✦</span><span class="star s2">✦</span>
+    <h2 class="grade-title">Grade 7</h2>
+    <div class="book">
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>The Architecture of Computing</li>
+          <li>Algorithmic Logic</li>
+          <li>Data Analysis in Excel</li>
+          <li>Applied AI and Chatbots</li>
+        </ul>
+      </div>
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>Web Architecture and HTML5</li>
+          <li>Physical Computing with Arduino</li>
+          <li>Spatial Design and 3D Prototyping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="demo-box">
+      <h3>Try a demo</h3>
+      <p class="demo-row"><span>Username</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <p class="demo-row"><span>Password</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <a class="demo-link" href="#" rel="noopener">Click here to see the course</a><!-- change href to this grade's course link -->
+    </div>
+  </article>
+
+  <article id="grade-12" class="grade g12">
+    <span class="star s1">✦</span><span class="star s2">✦</span>
+    <h2 class="grade-title">Grade 12</h2>
+    <div class="book">
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>Mastering Linux Environments</li>
+          <li>The Future of AI</li>
+          <li>Python Logic &amp; Automation</li>
+          <li>Ethical Tech &amp; Innovation</li>
+        </ul>
+      </div>
+      <div class="page">
+        <h3 class="toc-pill">Table of Contents</h3>
+        <p class="chap">Chapters</p>
+        <ul class="chapters">
+          <li>Google Sites Portfolios &amp; The Pitch</li>
+          <li>Arduino-Powered Smart Systems</li>
+          <li>3D Printed Capstone Prototypes</li>
+        </ul>
+      </div>
+    </div>
+    <div class="demo-box">
+      <h3>Try a demo</h3>
+      <p class="demo-row"><span>Username</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <p class="demo-row"><span>Password</span><button class="demo-copy" data-copy="demo" title="Click to copy">demo</button></p>
+      <a class="demo-link" href="#" rel="noopener">Click here to see the course</a><!-- change href to this grade's course link -->
+    </div>
+  </article>
+</section>
+
+<!-- Contact us -->
+<section id="contact" class="contact">
+  <div class="contact-inner">
+    <img class="logo" src="images/logo.png" alt="Zaytouna for Technology and Innovation">
+    <div class="info">
+      <h2>Contact us</h2>
+      <button class="copy" data-copy="+961 71 749 713">📞 +961 71 749 713</button>
+      <button class="copy" data-copy="zaytouna@sciencelb.org">✉️ zaytouna@sciencelb.org</button>
+    </div>
+  </div>
+  <p class="foot">Innovation in Technology &amp; STEAM Curriculum</p>
+</section>
 </main>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
